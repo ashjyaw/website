@@ -1,5 +1,6 @@
 body {
-    background-image: url("./webbackground.jpg");
+    background-image: url("./desert.jpg");
+    background-size: cover;
     text-align: center;
     color: white;
 }
