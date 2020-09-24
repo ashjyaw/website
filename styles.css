@@ -5,6 +5,8 @@ body {
     color: white;
 }
 table, th, tr {
+    table-layout: fixed;
+    width: 50%; 
     margin-left:auto; 
     margin-right:auto;
     border: 3px solid white;
