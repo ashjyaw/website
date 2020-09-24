@@ -4,3 +4,8 @@ body {
     text-align: center;
     color: gray;
 }
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    
+}
