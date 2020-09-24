@@ -1,4 +1,4 @@
 body {
-    background-image: url("{{ site.baseurl }}/webbackground.jpg");
+    background-image: url("./webbackground.jpg");
     text-align: center;
 }
