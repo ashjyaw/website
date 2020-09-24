@@ -5,7 +5,5 @@ body {
     color: gray;
 }
 table, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
-    
+    border: 3px solid white;
 }
