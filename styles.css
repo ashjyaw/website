@@ -1,6 +1,6 @@
 body {
     background-image: url("./topokafalls.jpg") no-repeat center fixed;
-    background-size: cover;
+    background-size: 1080px 1920px, auto;
     text-align: center;
     color: white;
 }
