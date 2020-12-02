@@ -1,5 +1,5 @@
 body {
-    background-image: url("./desert.jpg") no-repeat center fixed;
+    background-image: url("./desert.jpg");
     background-size: auto;
     text-align: center;
     color: white;
