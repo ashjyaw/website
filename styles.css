@@ -1,19 +1,101 @@
-body {
+body,html{
+    height: 100%;
     background-image: url("./desert.jpg");
-    background-size: auto;
+    background-size: cover;
+}
+p{
+  color: white;
+}
+.photoContainer{
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: steelblue;
+  position: relative;
+  width: 400px;
+}
+.image{
+  display: block;
+}
+.photoOverlay{
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blanchedalmond;
+  overflow: hidden;
+  width: 430px;
+  height: 0;
+  transition: .5s ease;
+}
+.photoContainer:hover .photoOverlay{
+  height: 100%;
+}
+
+.photoText{
+  white-space: nowrap;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.curVid{
+  margin-top: 10px;
+  background-color: gray;
+  
+  padding: 14px;
+  float: right;
+  float: top;
+  border-radius: 25px;
+}
+div.SelfPhoto{
+  width: 500px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+div.description{
+  width: 500px;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.navbar {
+    
+    border-radius: 25px;
+    width: 100%;
+    background-color: rgb(14, 128, 33);
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
     text-align: center;
-    color: white;
-}
-table {
-    padding: 100px;   
-}
-table, th, tr {
-    table-layout: auto;
-    width: 50%; 
-    margin-left:auto; 
-    margin-right:auto;
-    border: 3px solid white;
-}
-th, tr, td {
-    padding: 15px;
-}
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ 
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color:rgb(211, 112, 0);
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
