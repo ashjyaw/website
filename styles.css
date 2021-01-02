@@ -7,10 +7,11 @@ p{
   color: white;
 }
 .photoContainer{
+  float: left;
   margin-top: 20px;
   border-radius: 25px;
   padding: 15px;
-  background-color: steelblue;
+  background-color: rgb(86, 164, 228);
   position: relative;
   width: 400px;
 }
@@ -29,7 +30,7 @@ p{
   height: 0;
   transition: .5s ease;
 }
-.photoContainer:hover .photoOverlay{
+.photoContainer:hover .photoOverlay, .SelfPhoto:hover .SelfOverlay{
   height: 100%;
 }
 
@@ -53,13 +54,18 @@ p{
   float: top;
   border-radius: 25px;
 }
-div.SelfPhoto{
+.SelfPhoto{
+  float: right;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: rgb(189, 0, 0);
+  position: relative;
   width: 500px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
 }
-div.description{
+.description{
+  border-radius: 25px;
+  float: left;
   width: 500px;
   text-align: center;
   padding: 10px 10px;
@@ -77,21 +83,46 @@ div.description{
     float: left;
     text-align: center;
     padding: 12px;
-    color: black;
+    color:white;
     text-decoration: none;
     font-size: 17px;
   }
   
  
   .navbar a:hover {
-    background-color: #000;
+    background-color: black;
   }
   
   /* Current/active navbar link */
   .active {
     background-color:rgb(211, 112, 0);
   }
-  
+  .aboutImage{
+    display: block;
+  }
+  .SelfText{
+    white-space: nowrap;
+    color:whitesmoke;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .SelfOverlay{
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(214, 0, 0);
+    overflow: hidden;
+    width: 530px;
+    height: 0;
+    transition: .5s ease;
+  }
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
     .navbar a {
