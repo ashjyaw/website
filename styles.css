@@ -47,7 +47,7 @@ p{
 }
 .curVid{
   margin-top: 10px;
-  background-color: gray;
+  background-color: burlywood;
   
   padding: 14px;
   float: right;
@@ -92,12 +92,20 @@ div.diabetes
 {
   color:black;
 }
+div.college{
+  margin-top: 10px;
+  width: 45%;
+  float: left;
+  background-color: cadetblue;
+  border-radius: 25px;
+  padding: 15px;
+}
 
 .navbar {
     
     border-radius: 25px;
     width: 100%;
-    background-color: rgb(14, 128, 33);
+    background-color: cadetblue;
     overflow: auto;
   }
   
