@@ -71,12 +71,26 @@ p{
   padding: 10px 10px;
 }
 div.Stats{
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 20px;
   float:left;
-  width: 33%;
+  width: 40%;
+  background-color: indianred;
 }
 div.Banner{
-  font-size: large;
+  color: antiquewhite;
+  font-size: larger;
   font-weight: bolder;
+}
+div.glucose{
+  color: antiquewhite;
+  font-size: large;
+  font-weight: bold;
+}
+div.diabetes
+{
+  color:black;
 }
 
 .navbar {
