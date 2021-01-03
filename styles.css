@@ -70,6 +70,14 @@ p{
   text-align: center;
   padding: 10px 10px;
 }
+div.Stats{
+  float:left;
+  width: 33%;
+}
+div.Banner{
+  font-size: large;
+  font-weight: bolder;
+}
 
 .navbar {
     
